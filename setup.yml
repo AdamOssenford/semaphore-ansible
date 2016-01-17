@@ -6,4 +6,4 @@
     ansible_path: "{{ lookup('env','ANSIBLE_WORK_DIR') }}"
   tasks:
   - name: random command
-    shell: /usr/bin/hostname
+    shell: /bin/hostname
