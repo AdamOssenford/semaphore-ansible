@@ -7,3 +7,7 @@
   tasks:
   - name: random command
     shell: /bin/hostname
+    register: host_name
+    
+  - debug: var=host_name
+
