@@ -9,5 +9,6 @@
     shell: /bin/hostname
     register: host_name
     
-  - debug: msg="The hostname of the system is {{ host_name.stdout }}"
+  - name: report results
+    debug: msg="The hostname of the system is {{ host_name.stdout }}"
 
