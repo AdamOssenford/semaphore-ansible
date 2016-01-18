@@ -1,7 +1,8 @@
 ---
-- hosts: localhost
+- hosts: ubuntu
   gather_facts: false
-  user: root
+  user: oss
+  sudo: True
   vars:
     ansible_path: "{{ lookup('env','ANSIBLE_WORK_DIR') }}"
   tasks:
