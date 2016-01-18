@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.7.5
+- hosts: ubuntu
   gather_facts: false
   user: oss
   sudo: True
